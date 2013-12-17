@@ -1,7 +1,7 @@
 CPAN and meta::cpan interlinks
 ==============================
 
-A Greasemonkey Add-On that adds CPAN links to meta::cpan and vice-versa
+A Greasemonkey add-on that adds CPAN links to meta::cpan and vice-versa.
 
 ## DESCRIPTION
 
@@ -10,7 +10,10 @@ site. This Greasemonkey script adds links to meta::cpan on every POD page render
 to hop over to CPAN, if that is what you like better. In case you prefer meta::cpan,
 this script does the same on CPAN, vice-versa.
 
-[This script on userscripts.org](http://userscripts.org/scripts/show/186311)
+[This script on userscripts.org](http://userscripts.org/scripts/show/186311) where
+you can also [install it](http://userscripts.org/scripts/source/186311.user.js).
+
+[This script on github](https://github.com/clipland/addon-cpan-metacpan-links).
 
 ## AUTHOR
 
