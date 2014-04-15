@@ -2,11 +2,12 @@
 // @name           CPAN and meta::cpan interlinks
 // @namespace      http://www.clipland.com/
 // @description    Add CPAN links to meta::cpan and vice-versa
-// @version        0.1
+// @version        0.2
 // @author         clipland
 // @license        GNU GPL License
 // @grant          none
 // @include        https://metacpan.org/pod/*
+// @include        https://metacpan.org/release/*
 // @include        http://search.cpan.org/*
 // @updateURL      https://userscripts.org/scripts/source/186311.meta.js
 // @downloadURL    https://userscripts.org/scripts/source/186311.user.js
@@ -32,11 +33,12 @@
  */
 
 if( location.href.match(/metacpan/) ){
-	var ul = document.getElementsByClassName("search-bar")[0].children[1].children[0];
-
-	var elem = document.getElementsByClassName("select-text")[0].innerHTML;
-
-	ul.innerHTML += "<a href=\"http://search.cpan.org/perldoc?" + elem +"\">CPAN</a>";
+    var h = document.getElementsByClassName('nav-header');
+	for(var i=0;i<h.length;i++){
+		if(h[i].innerHTML.match(/S.C.O/)){
+            h[i].innerHTML = 'CPAN';
+		}
+	}
 }else{
 	var div = document.getElementsByClassName("noprint")[1];
 	var elem = document.getElementById("permalink").nextElementSibling.nextElementSibling.innerHTML.split('-');
