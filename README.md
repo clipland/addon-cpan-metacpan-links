@@ -1,3 +1,5 @@
+***Deprecation note***: This repository has been superseded by the [CPAN Theme for MetaCPAN](https://github.com/clipland/addon-cpan-theme-for-metacpan) Firefox browser add-on.
+
 CPAN and meta::cpan interlinks
 ==============================
 
